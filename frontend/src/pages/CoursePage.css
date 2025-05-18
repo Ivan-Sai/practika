@@ -1,0 +1,44 @@
+.course-page {
+  padding: 1rem 0;
+}
+
+.course-header {
+  margin-bottom: 2rem;
+}
+
+.course-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.course-status-badges {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.course-content {
+  margin-bottom: 2rem;
+}
+
+.error-container {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.no-data {
+  text-align: center;
+  padding: 2rem;
+  color: #777;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .course-header {
+    text-align: center;
+  }
+  
+  .course-status-badges {
+    justify-content: center;
+  }
+}

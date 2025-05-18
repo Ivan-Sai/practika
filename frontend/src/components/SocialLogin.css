@@ -1,0 +1,167 @@
+.social-login {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.social-login h3 {
+  position: relative;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.social-login h3::before,
+.social-login h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.social-login h3::before {
+  left: 0;
+}
+
+.social-login h3::after {
+  right: 0;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  border: none;
+}
+
+.facebook-button {
+  background-color: #3b5998;
+  color: white;
+}
+
+.facebook-button:hover {
+  background-color: #344e86;
+}
+
+.google-button-container {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+.social-login {
+  margin: 1.5rem 0;
+}
+
+.social-login-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.social-login-separator::before,
+.social-login-separator::after {
+  content: '';
+  flex: 1;
+  border-top: 1px solid #ddd;
+}
+
+.social-login-separator span {
+  padding: 0 1rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-facebook,
+.btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  border: none;
+  color: white;
+}
+
+.btn-facebook:hover {
+  background-color: #344e86;
+}
+
+.btn-google {
+  background-color: white;
+  border: 1px solid #ddd;
+  color: #555;
+}
+
+.btn-google:hover {
+  background-color: #f1f1f1;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 0.8rem;
+  font-weight: bold;
+}
+
+.btn-facebook .social-icon {
+  background-color: white;
+  color: #3b5998;
+}
+
+.btn-google .social-icon {
+  background-color: #ea4335;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .social-buttons {
+    flex-direction: column;
+  }
+}
+/* Add Font Awesome for social icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+@media (max-width: 768px) {
+  .social-button {
+    width: 100%;
+  }
+  
+  .social-login h3::before,
+  .social-login h3::after {
+    width: 25%;
+  }
+}

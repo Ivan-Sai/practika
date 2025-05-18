@@ -1,0 +1,121 @@
+.profile-page {
+  padding: 1rem 0;
+}
+
+.profile-page h1 {
+  margin-bottom: 2rem;
+}
+
+.profile-info {
+  margin-bottom: 2rem;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-email {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.profile-grades {
+  margin-bottom: 2rem;
+}
+
+.profile-grades h2 {
+  margin-bottom: 1rem;
+}
+
+.no-grades {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #777;
+}
+
+.grades-table-container {
+  overflow-x: auto;
+}
+
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.grades-table th,
+.grades-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.grades-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #555;
+}
+
+.grades-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.course-link {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.course-link:hover {
+  text-decoration: underline;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.add-grade-section {
+  padding: 1.5rem;
+}
+
+.add-grade-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.add-grade-form .form-group {
+  margin-bottom: 0;
+}
+
+.add-grade-form button {
+  align-self: end;
+}
+
+@media (max-width: 768px) {
+  .add-grade-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .add-grade-form button {
+    margin-top: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-sm {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+}
